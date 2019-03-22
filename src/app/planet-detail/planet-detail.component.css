@@ -1,0 +1,62 @@
+#detail {
+  width: 1200px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0;
+}
+
+#back {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  display: inline-block;
+  color: #55acee;
+  border: 2px #55acee solid;
+  background: #fff;
+  padding: 10px 30px;
+  align-self: flex-start
+}
+
+#back:hover {
+  background-color: #55acee;
+  color: #fff
+}
+
+#detail > h1 {
+  align-self: flex-end;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.planet-param {
+  font-size: 30px;
+  padding: 20px 0;
+  -ms-flex-item-align: end;
+  justify-self: flex-end;
+  text-align: end;
+  flex-wrap: wrap;
+  width: 25%;
+}
+
+.planet-param.txt {
+  font-size:16px;
+}
+.planet-param > h4 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.row {
+  display:flex;
+  flex-direction: row;
+}
+
+

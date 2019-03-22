@@ -1,0 +1,28 @@
+<div id='detail'>
+  <button routerLink="/planet" id="back">Back</button>
+  <h1> {{planet?.name}}</h1>
+  <div class="row">
+    <div class ='planet-param'> <h4>Rotation period: </h4> {{planet?.rotation_period}}</div>
+    <div class ='planet-param'> <h4>Orbital period: </h4> {{planet?.orbital_period}}</div>
+    <div class ='planet-param'> <h4>Diameter: </h4> {{planet?.rotation_period}}</div>
+    <div class ='planet-param'> <h4>Climate: </h4> {{planet?.climate}}</div>
+  </div>
+
+  <div class="row">
+    <div class ='planet-param'> <h4>Gravity: </h4> {{planet?.gravity}}</div>
+    <div class ='planet-param'> <h4>Terrain: </h4> {{planet?.terrain}}</div>
+    <div class ='planet-param'> <h4>Surface Water: </h4> {{planet?.surface_water}}</div>
+    <div class ='planet-param'> <h4>Population: </h4> {{planet?.population}}</div>
+  </div>
+
+  <div class="row">
+    <div class ='planet-param txt'> <h4>Residents: </h4> {{planet?.residents.join(' ')}}</div>
+    <div class ='planet-param txt'> <h4>Films: </h4>   {{planet?.films.join(' ')}}</div>
+    <div class ='planet-param txt'> <h4>Created: </h4>  {{planet?.created}}</div>
+    <div class ='planet-param txt'> <h4>Edited:  </h4>  {{planet?.edited}}</div>
+  </div>
+
+  <div class="row">
+    <div class ='planet-param txt'> <h4>URL: </h4>  {{planet?.url}}</div>
+  </div>
+</div>

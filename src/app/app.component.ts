@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, Output, Input } from '@angular/core';
+import { PlanetListComponent } from './planet-list/planet-list.component';
+import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+
 }

@@ -1,0 +1,41 @@
+<div id="planetList">
+  <h1>Swapi Planet List</h1>
+  <div class="flex">
+    <label for="search" class="search">
+      <input type="text" id='search' (keyup)='searchPlanetName()' placeholder="&nbsp;">
+      <span class="label">Search</span>
+      <span class="border"></span>
+    </label>
+    <div class='list-size'>
+      <p>Number of planets on page:
+        <span (click) = 'setlistSize(5)'>5</span> -
+        <span (click) = 'setlistSize(10)'>10</span> -
+        <span (click) = 'setlistSize(25)'>25</span> -
+        <span (click) = 'setlistSize(100)'>100</span>
+      </p>
+    </div>
+  </div>
+
+
+  <app-header class="row head"></app-header>
+
+  <div  *ngFor="let planet of planets | paginate: { itemsPerPage: listSize, currentPage: p }; let i = index" class = "planet-row" >
+    <a class="row" id='{{planet.url | slice:29 :-1}}' [routerLink]="[planet.url | slice:29 :-1]">
+      <div class="name row-cell">{{planet.name}}</div>
+      <div class="row-cell">
+        {{planet.population}}
+      </div>
+      <div class="row-cell">
+        {{planet.terrain}}
+      </div>
+      <div class="row-cell">
+        {{planet.diameter}}
+      </div>
+    </a>
+
+
+  </div>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+<router-outlet></router-outlet>
+

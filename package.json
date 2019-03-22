@@ -22,7 +22,9 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+    "ngx-pagination": "^3.2.1",
     "rxjs": "^5.5.6",
+    "swapi-node": "^0.4.4",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
@@ -44,5 +46,18 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "PlanetList"
+  },
+  "keywords": [
+    "Star",
+    "Wars",
+    "Planet",
+    "List"
+  ],
+  "author": "Maciej 'MacOne' Łukasiak"
 }
