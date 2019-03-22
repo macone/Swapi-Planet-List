@@ -28,7 +28,6 @@ export class PlanetService {
     page.forEach(el => {
       this.getJSON(el).subscribe(data => {
         data.results.forEach(element => {
-          console.log(element.films);
           planets.push(element);
           this.sortPlanet(planets);
         });
